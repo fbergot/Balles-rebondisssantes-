@@ -52,7 +52,7 @@ function creationCircle(nBall, rayon, colors, speedX) {
 
   for (let i = 0; i < nBall; i++) {
     // random start ball in x & y
-    startY = (Math.random() * (canvas.width - 50)) + 10;
+    startY = (Math.random() * (150)) + 10;
     startX = (Math.random() * (canvas.height - 50)) + 10;
 
     arrayInstanceOfBall.push(
