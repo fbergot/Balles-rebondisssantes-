@@ -7,6 +7,7 @@ window.requestAnimationFrame =
 
 const $ = (tag) => document.querySelector(tag);
 let arrayBall;
+const rayonBall = 30;
 const restartButton = $('#restart').addEventListener('click', () => {
   window.location.reload(false);
 })
@@ -15,7 +16,7 @@ const numberBall = $("#numberBall");
 const startButton = $('#start').addEventListener('click', () => {
     arrayBall = creationCircle(
       numberBall.value,
-      30,
+      rayonBall,
       ["#6D378B", "#F2E501", "#F28E1E", "#2B72B2", "#8EBA25", "#C5037C"],
       startSpeed.value
     );
@@ -51,8 +52,8 @@ function creationCircle(nBall, rayon, colors, speedX) {
 
   for (let i = 0; i < nBall; i++) {
     // random start ball in x & y
-    startY = (Math.random() * 250) + 10;
-    startX = (Math.random() * 250) + 10;
+    startY = (Math.random() * (canvas.width - 50)) + 10;
+    startX = (Math.random() * (canvas.height - 50)) + 10;
 
     arrayInstanceOfBall.push(
       new DrawCircle(
