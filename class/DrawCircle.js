@@ -11,20 +11,7 @@ export default class DrawCircle {
    * @memberof DrawCircle
    * @return {none}
    */
-  constructor(
-    rayon,
-    y,
-    x,
-    vx,
-    vy,
-    coefRestitution,
-    color,
-    deltaGrav,
-    deltaTime,
-    canvasHeight,
-    canvasWidth,
-    ctx
-  ) {
+  constructor(rayon, y, x, vx, y, coefRestitution, color, deltaGrav, deltaTime, canvasHeight, canvasWidth, ctx) {
     this.rayon = rayon;
     this.y = y;
     this.x = x;

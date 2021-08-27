@@ -32,8 +32,6 @@ $('#start').addEventListener('click', () => {
 })
 
 
-
-
 /**
  * Create array of ball instance
  * @param {Number} nBall
