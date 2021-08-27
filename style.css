@@ -5,17 +5,14 @@ h1 {
     display: flex;
     justify-content: center;
 }
-
 .speed {
     margin-left: 20px;
 }
-
 .startCont {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
-
 #numberBall, #startSpeed {
     width: 50px;
 }

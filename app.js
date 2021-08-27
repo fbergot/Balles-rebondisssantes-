@@ -74,8 +74,6 @@ function creationCircle(nBall, rayon, colors, speedX) {
   return arrayInstanceOfBall;
 }
 
-// const arrayBall = creationCircle(30, 15, ["#286593", "red", "yellow", "pink"], 8);
-
 /**
  * Animation ~ 50 fps
  *
