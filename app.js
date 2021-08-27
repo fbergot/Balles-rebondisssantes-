@@ -1,5 +1,13 @@
 import DrawCircle from "./class/DrawCircle.js";
 
+//init canvas
+const canvas = document.querySelector("#canvas1");
+const ctx = canvas.getContext("2d");
+
+// width & height canvas
+canvas.width = innerWidth / 2;
+canvas.height = innerHeight / 2;
+
 window.requestAnimationFrame =
     window.requestAnimationFrame ||
     window.mozRequestAnimationFrame ||
@@ -8,12 +16,12 @@ window.requestAnimationFrame =
 const $ = (tag) => document.querySelector(tag);
 let arrayBall;
 const rayonBall = 30;
-const restartButton = $('#restart').addEventListener('click', () => {
-  window.location.reload(false);
-})
 const startSpeed = $("#startSpeed");
 const numberBall = $("#numberBall");
-const startButton = $('#start').addEventListener('click', () => {
+$('#restart').addEventListener('click', () => {
+  window.location.reload(false);
+})
+$('#start').addEventListener('click', () => {
     arrayBall = creationCircle(
       numberBall.value,
       rayonBall,
@@ -23,14 +31,6 @@ const startButton = $('#start').addEventListener('click', () => {
     animate();
 })
 
-
-//init canvas
-const canvas = document.querySelector("#canvas1");
-const ctx = canvas.getContext("2d");
-
-// width & height canvas
-canvas.width = innerWidth / 2;
-canvas.height = innerHeight / 2;
 
 
 
