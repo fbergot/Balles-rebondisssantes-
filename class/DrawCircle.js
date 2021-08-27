@@ -59,10 +59,11 @@ export default class DrawCircle {
    * @returns {none}
    */
   update() {
+    // dynamic of gravity
     this.vy += this.deltaGrav * this.deltaTime;
     this.x += this.vx * this.deltaTime;
     this.y += this.vy * this.deltaTime;
-
+    // limit of canvas, speed inversion
     this.limitArea();
   }
 

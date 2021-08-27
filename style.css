@@ -1,8 +1,37 @@
-.container {
+h1 {
+    text-align: center;
+}
+.buttonContainer {
     display: flex;
     justify-content: center;
 }
 
+.speed {
+    margin-left: 20px;
+}
+
+.startCont {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#numberBall, #startSpeed {
+    width: 50px;
+}
+.number label, .speed label {
+    font-size: 20px;
+}
+.container {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.start, .restart {
+    padding: 15px;
+}
 canvas {
     border: 2px solid grey;
+
 }

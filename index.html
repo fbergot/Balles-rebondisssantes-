@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Balles rebondissantes</title>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="app.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <canvas id='canvas1'></canvas>
-    </div>
-    
+    <header>
+        <h1>Simuler des balles rebondissantes</h1>
+    </header>
+    <main>
+        <div class="buttonContainer">
+            <div class="number">
+                <label for="numberBall">Combien de balle(s) ?</label>
+                <input value="1" type="number" id="numberBall">
+            </div>
+            <div class="speed">
+                <label for="startSpeed">Vitesse en x de départ</label>
+                <input value="5" type="number" id="startSpeed">
+            </div>
+            
+        </div>
+        <div class="container">
+            <canvas id='canvas1'></canvas>
+        </div>
+        <div class="startCont">
+                <button class="start" id="start">Start simulation</button>
+                <button class="restart" id="restart">Reload</button>
+            </div>    
+    </main>
 </body>
 </html>
