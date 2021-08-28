@@ -18,6 +18,7 @@ h1 {
 }
 .number label, .speed label {
     font-size: 20px;
+    margin-right: 5px;
 }
 .number, .speed {
     display: flex;
