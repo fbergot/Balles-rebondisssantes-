@@ -41,6 +41,6 @@ canvas {
 
 @media screen and (max-width: 767px) {
     .buttonContainer {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
