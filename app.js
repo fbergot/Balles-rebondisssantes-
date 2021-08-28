@@ -23,10 +23,10 @@ $('#restart').addEventListener('click', () => {
 })
 $('#start').addEventListener('click', () => {
     arrayBall = creationCircle(
-      numberBall.value,
+      Number.parseInt(numberBall.value),
       rayonBall,
       ["#6D378B", "#F2E501", "#F28E1E", "#2B72B2", "#8EBA25", "#C5037C"],
-      startSpeed.value
+      Number.parseInt(startSpeed.value)
     );
     animate();
 })
@@ -37,6 +37,7 @@ $('#start').addEventListener('click', () => {
  * @param {Number} nBall
  * @param {Number} rayon
  * @param {String} colors
+ * @param {Number}
  * @returns {Array<DrawCircle>}
  */
 function creationCircle(nBall, rayon, colors, speedX) {
