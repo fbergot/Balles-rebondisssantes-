@@ -29,6 +29,12 @@ h1 {
     padding: 15px;
 }
 canvas {
-    border: 2px solid grey;
+    border: 3px solid grey;
 
+}
+
+@media screen and (max-width: 767px) {
+    .buttonContainer {
+        justify-content: space-between;
+    }
 }
