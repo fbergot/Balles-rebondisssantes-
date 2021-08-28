@@ -37,7 +37,7 @@ $('#start').addEventListener('click', () => {
  * @param {Number} nBall
  * @param {Number} rayon
  * @param {String} colors
- * @param {Number}
+ * @param {Number} speedX
  * @returns {Array<DrawCircle>}
  */
 function creationCircle(nBall, rayon, colors, speedX) {
